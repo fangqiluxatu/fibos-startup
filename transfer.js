@@ -24,13 +24,13 @@ function transferFO(from, to, amount){
     var account = from;
     var value = amount.toFixed(4) + " FO@eosio";
     var ctx = client.contractSync("eosio.token");
-    var memo = "";
+    var memo = "感谢您对chinafibosbp节点的支持~";
     var result = ctx.transferSync(account, to, value, memo);
     console.log(result);
 }
 
 // 把 EOS@FO 转到 EOS@EOS，fromaccount 是 FO 的主网账号，toaccount 是EOS主网账号
-transferEOS("fromaccount", "toaccount", 1);
+//transferEOS("fromaccount", "toaccount", 1);
 
 // 把 FO@FO 转到 FO@FO，fromaccount 是 FO 的主网账号，toaccount 是 FO 的主网账号
-// transferFO("fromaccount", "toaccount", 1);
+transferFO("cnblockchain", "xuanyuan1122", 1637);
